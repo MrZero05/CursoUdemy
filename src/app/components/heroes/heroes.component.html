@@ -3,7 +3,7 @@
 
 <div class="card-columns">
     <!-- *ngFor="let heroe of heroes; let i = index" -->
-    <app-heroe-tarjeta *ngFor="let heroe of heroes; let i = index"></app-heroe-tarjeta>
+    <app-heroe-tarjeta [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes; let i = index"></app-heroe-tarjeta>
 
 
 
