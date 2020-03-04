@@ -14,7 +14,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
-import { SearchHeroeComponent } from './components/search-heroe/search-heroe.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SearchHeroeComponent } from './components/search-heroe/search-heroe.com
     AboutComponent,
     HeroesComponent,
     HeroeComponent,
-    SearchHeroeComponent
+    BuscadorComponent,
+    HeroeTarjetaComponent
   ],
   imports: [
     BrowserModule,
