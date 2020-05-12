@@ -21,10 +21,27 @@
                 <a class="nav-link" [routerLink]="['about']">About</a>
             </li>
         </ul>
+        <!--Funciona la búsqueda perfectamente-->
+        <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="input" placeholder="Buscar Héroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+            <button (click)="buscarHeroe(buscarTexto.value)" class="btn btn-outline-success btn-outline-primary my-2 my-sm-0" type="button">Buscar</button>
+        </div>
 
+        <!--No funciona la búsqueda al oprimir el botón enter-->
+        <!--
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar Héroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+            <input class="form-control mr-sm-2" type="input" placeholder="Buscar Héroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
             <button (click)="buscarHeroe(buscarTexto.value)" class="btn btn-outline-success btn-outline-primary my-2 my-sm-0" type="button">Buscar</button>
         </form>
+        Funciona la búsqueda perfectamente, por el keydown
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="input" placeholder="Buscar Héroe" (keydown.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+            <button (click)="buscarHeroe(buscarTexto.value)" class="btn btn-outline-success btn-outline-primary my-2 my-sm-0" type="button">Buscar</button>
+        </form>
+        Funciona la búsqueda perfectamente, porque el submit se especifica en el label del button
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="input" placeholder="Buscar Héroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+            <button (click)="buscarHeroe(buscarTexto.value)" class="btn btn-outline-success btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+        </form>-->
     </div>
 </nav>
